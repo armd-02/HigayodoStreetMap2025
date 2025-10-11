@@ -1,0 +1,37 @@
+{
+    "list": {
+        "columns": {
+            "common": [
+                {
+                    "id": "osmid",
+                    "hidden": true
+                },
+                {
+                    "id": "category",
+                    "name": "Category"
+                },
+                {
+                    "id": "title",
+                    "name": "title"
+                },
+                {
+                    "id": "eventdate",
+                    "name": "datetime",
+                    "hidden": true
+                }
+            ],
+            "poiFields": [
+                "id",
+                "category",
+                "#category",
+                "eventdate"
+            ],
+            "actFields": [
+                "id",
+                "category",
+                "title",
+                "eventdate"
+            ]
+        }
+    }
+}

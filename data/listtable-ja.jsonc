@@ -1,0 +1,39 @@
+{
+    "list": {
+        "columns": {
+            "common": [
+                {
+                    "id": "osmid",
+                    "hidden": true
+                },
+                {
+                    "id": "category",
+                    "name": "種類",
+                    "width": "40%"
+                },
+                {
+                    "id": "title",
+                    "name": "タイトル",
+                    "width": "60%"
+                },
+                {
+                    "id": "eventdate",
+                    "name": "開催日時",
+                    "hidden": true
+                }
+            ],
+            "poiFields": [
+                "id",
+                "category",
+                "#category",
+                "eventdate"
+            ],
+            "actFields": [ //#付きはOSMタグ、ただし#categoryのみ内部判定結果
+                "id", // 最初の列は#id固定
+                "category",
+                "title",
+                "eventdate"
+            ]
+        }
+    }
+}
