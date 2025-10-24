@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
         winCont.viewSplash(true);
         listTable.init();
-        poiCont.init(Conf.minimap.use);
+        poiCont.init(Conf.map.miniMap);
 
         Promise.all([
             gSheet.get(Conf.google.AppScript),
@@ -109,6 +109,7 @@ window.addEventListener("DOMContentLoaded", function () {
             winCont.playback(Conf.listTable.playback.view); // playback control view:true/false
             winCont.download(Conf.listTable.download); // download view:true/false
             cMapMaker.changeMode("map"); // initialize last_modetime
+            winCont.showMessage(Conf.tile[mapLibre.selectStyle].name);
             const mergedMenu = [...Conf.menu.main, ...Conf.menu.mainSystem];
             winCont.menu_make(mergedMenu, "main_menu");
             winCont.mouseDragScroll(images, cMapMaker.eventViewThumb); // set Drag Scroll on images
@@ -142,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function () {
             if (Conf.poiView.poiActLoad) {
                 let osmids = poiCont.pois().acts.map((act) => { return act.osmid; });
                 osmids = osmids.filter(Boolean);
-                if (osmids.length > 0 && !Conf.static.use) {
+                if (osmids.length > 0 && !Conf.static.mode) {
                     basic.retry(() => overPassCont.getOsmIds(osmids), 5).then((geojson) => {
                         poiCont.addGeojson(geojson)
                         poiCont.setActlnglat()
@@ -161,10 +162,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function loadStatic() {
     return new Promise((resolve, reject) => {
-        if (!Conf.static.use) {
+        if (!Conf.static.mode) {
             resolve();
         } else {
-            console.log("cMapMaker: no static mode");
+            console.log("cMapMaker: Static mode");
             const fetchUrls = Conf.static.osmjsons.map((url) => fetch(url).then((res) => res.text()));
             Promise.all(fetchUrls).then((datas) => {
                 datas.forEach(data => {
@@ -173,7 +174,7 @@ function loadStatic() {
                     poiCont.addGeojson(ovanswer);
                 })
                 poiCont.setActlnglat();
-                console.log("cMapMaker: static load done.");
+                console.log("cMapMaker: Static load done.");
                 resolve();
             })
         }

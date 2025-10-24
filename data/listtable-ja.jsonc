@@ -29,7 +29,7 @@
                 "eventdate"
             ],
             "actFields": [ //#付きはOSMタグ、ただし#categoryのみ内部判定結果
-                "id", // 最初の列は#id固定
+                "#id", // 最初の列は#id固定
                 "category",
                 "title",
                 "eventdate"

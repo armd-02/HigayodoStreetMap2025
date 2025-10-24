@@ -1,6 +1,7 @@
 // Community Mapmaker User Config
 {
     "map": {
+        "miniMap": true, // miniMap表示時はtrue
         "changeMap": true, // 地図切り替え時はtrue
         "tileName": "OSMFJ_nopoi", // タイル一覧は config-system.jsonc へ
         "viewCenter": [
@@ -21,27 +22,22 @@
         ],
         "initZoom": 15,
         "maxZoom": 23,
-        "detailZoom": 19 // モーダルダイアログ表示時のズームサイズ
+        "detailZoom": 18, // モーダルダイアログ表示時のズームサイズ
+        "textFont": [
+            "Noto Sans Bold"
+        ], // 使用可能なフォント（spriteに依存）
+        "polygonMarker": { // ポリゴン設定
+            "fill-color": "#CC6666",
+            "fill-opacity": 0.3
+        }
     },
     "minimap": { // 地球儀表示時の初期設定
-        "use": false, // 地球儀利用時はtrue
         "height": 200,
         "initZoom": 2,
         "viewCenter": [
             135,
             34
         ]
-    },
-    "polygon": {
-        "textFont": [
-            "Noto Sans Regular"
-        ], // 使用可能なフォント（spriteに依存）
-        "textSize": 12, // 0:非表示
-        "textAnchor": "top",
-        "fill": { // ポリゴン設定
-            "fill-color": "#CC6666",
-            "fill-opacity": 0.3
-        }
     },
     "icon": {
         "fgPath": "icon",
@@ -64,11 +60,11 @@
         "poiFilter": "all", // listTable更新時 all:全て / filter:絞り込み / "":非連動
         "poiZoom": {
             // アイコンの前後位置は後ろの方が手前になる
-            "HigayodoStreetMap2025": 14
+            "HigayodoStreetMap2025": 12
         },
         "editZoom": {
             // 編集時に追加するpoiZoom
-            "HigayodoStreetMap2025": 14
+            "HigayodoStreetMap2025": 12
         }
     },
     "listTable": {
@@ -100,8 +96,10 @@
         "actTitle": "title" // アイコンの名称が無い時、指定したスプレッドシートの項目名を取得する
     },
     "static": {
-        "use": false,
-        "osmjsons": []
+        "mode": true,
+        "osmjsons": [
+            "./data/static.json"
+        ]
     },
     "wikipedia": {
         "marker": "wikipedia.svg",
@@ -113,6 +111,7 @@
     },
     "etc": {
         "localSave": "", // 訪問済み機能フラグ(有効時はアプリ名、無効時は"")
+        "reverseIcon": false, // true:訪問済みを目立たせる / false:訪問済みを目立たせない
         "editMode": false, // 編集メニューの表示/非表示
         "splashUrl": "./image/splash.jpg",
         "loadingUrl": "./image/loading.gif"
