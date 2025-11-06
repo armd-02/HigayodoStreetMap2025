@@ -3,7 +3,7 @@
     "map": {
         "miniMap": true, // miniMap表示時はtrue
         "changeMap": true, // 地図切り替え時はtrue
-        "tileName": "OSMFJ_nopoi", // タイル一覧は config-system.jsonc へ
+        "tileName": "OSMFJ_NOPOI", // タイル一覧は config-system.jsonc へ
         "viewCenter": [
             135.528728,
             34.744132
@@ -26,6 +26,7 @@
         "textFont": [
             "Noto Sans Bold"
         ], // 使用可能なフォント（spriteに依存）
+        "textSize": 12,
         "polygonMarker": { // ポリゴン設定
             "fill-color": "#CC6666",
             "fill-opacity": 0.3
@@ -60,14 +61,21 @@
         "poiFilter": "all", // listTable更新時 all:全て / filter:絞り込み / "":非連動
         "poiZoom": {
             // アイコンの前後位置は後ろの方が手前になる
-            "HigayodoStreetMap2025": 12
+            "activity": 8,
+            "Green": 15
         },
         "editZoom": {
             // 編集時に追加するpoiZoom
-            "HigayodoStreetMap2025": 12
+            "HigayodoStreetMap2025": 14
         }
     },
+    "selectItem": { // 選択リストの内容を手動記載 / 空の時は "" とする
+        "default": "activity",
+        "menu": "",
+        "action": "" // ChangeMap:背景地図切り替え / ChangePOI:メニューに会ったOverpass名のPOIを表示 / "":google Spreadseedのcategory
+    },
     "listTable": {
+        "backgroundImage": "./image/bgimage.png",
         "height": 0.6, // リスト時の高さ(1を最大とした割合)
         "category": "activity", // カテゴリ選択 / activity:アクティビティリスト / tags:タグ / menu: タグベースの手動カテゴリ
         "target": "activity", // targets:指定したtargetだけ表示 / activity:google sheetsのデータのみ表示 // 空:両方表示
@@ -84,19 +92,12 @@
         "slideThumbWidth": "320",
         "modalThumbWidth": "800"
     },
-    "selectItem": { // 選択リストの内容を手動記載 / 空の時は "" とする
-        "default": "",
-        "menu": "",
-        "action": "" // ChangeMap:背景地図切り替え / ChangePOI:メニューに会ったOverpass名のPOIを表示 / "":google Spreadseedのcategory
-    },
     "google": {
-        "Analytics": "",
-        "AppScript": "https://script.google.com/macros/s/AKfycbxDuN6lkmic6NXtucSzqk_jYi1ChJl3s6OKoP4-jYtgpU9N8yc3EsE3BvuRNd4Q5F8m/exec",
-        "targetName": "activity",
-        "actTitle": "title" // アイコンの名称が無い時、指定したスプレッドシートの項目名を取得する
+        "AppScript": "https://script.google.com/macros/s/AKfycbxcUZxfUddfPcAFxCcngQzEXZH74yuA5xQ4Z3uIBP_QSLdIemId_2gndiuct7WzutU/exec",
+        "targetName": "activity"
     },
     "static": {
-        "mode": true,
+        "mode": false,
         "osmjsons": [
             "./data/static.json"
         ]

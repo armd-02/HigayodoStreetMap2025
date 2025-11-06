@@ -17,11 +17,10 @@
         ]
     },
     "tile": {
-        "OSMFJ": {
-            "style": "./tiles/osmfj_poi.json"
-        },
-        "OSMFJ_nopoi": {
-            "style": "./tiles/osmfj_nopoi.json"
+        "OSMFJ_NOPOI": { // for planet globe
+            "style": "./tiles/osmfj_nopoi.json",
+            "name": "OpenStreetMap(3D/OSMFJ提供)",
+            "skip": false
         },
         "OSM_Standard": {
             "style": {
@@ -45,7 +44,9 @@
                         "source": "rtile"
                     }
                 ]
-            }
+            },
+            "name": "OpenStreetMap標準地図(2D)",
+            "skip": false
         },
         "GSI_seamlessphoto": {
             "style": {
@@ -69,11 +70,15 @@
                     }
                 ],
                 "glyphs": "https://tile.openstreetmap.jp/fonts/{fontstack}/{range}.pbf"
-            }
+            },
+            "name": "地理院 全国最新写真（シームレス）",
+            "skip": false
+        },
+        "miniMap": { // for planet globe
+            "style": "./tiles/osmfj_nopoi.json",
+            "name": "Planet globe",
+            "skip": true
         }
-    },
-    "miniMap": { // for planet globe
-        "style": "./tiles/osmfj_nopoi.json"
     },
     "menu_list": {
         "template": "<a class='dropdown-item'><span></span></a><span class='dropdown-item'></span>",
