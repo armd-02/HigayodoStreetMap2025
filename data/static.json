@@ -2,7 +2,7 @@
     "version": 0.6,
     "generator": "Overpass API 0.7.62.8 e802775f",
     "osm3s": {
-        "timestamp_osm_base": "2025-10-24T13:56:40Z",
+        "timestamp_osm_base": "2025-11-07T23:16:59Z",
         "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
     },
     "elements": [
@@ -43,14 +43,35 @@
         },
         {
             "type": "node",
+            "id": 5423723323,
+            "lat": 34.7520448,
+            "lon": 135.5352544,
+            "timestamp": "2024-10-29T12:35:26Z",
+            "version": 5,
+            "changeset": 158496119,
+            "user": "K_Sakanoshita",
+            "uid": 389520,
+            "tags": {
+                "amenity": "pub",
+                "contact:facebook": "https://www.facebook.com/%E5%91%B3%E5%B7%A5%E6%88%BF%E3%81%97%E3%81%B0%E3%81%BE%E3%82%93-1412640972337870/",
+                "name": "味工房しばまん",
+                "name:en": "Shibaman",
+                "opening_hours": "17:30-22:30; Mo off",
+                "opening_hours:covid19": "17:00-20:00; Mo off",
+                "phone": "+816-6321-4696",
+                "takeaway:covid19": "yes"
+            }
+        },
+        {
+            "type": "node",
             "id": 5875311485,
             "lat": 34.7253770,
             "lon": 135.4882807,
-            "timestamp": "2024-11-23T04:29:42Z",
-            "version": 11,
-            "changeset": 159482417,
-            "user": "K_Sakanoshita",
-            "uid": 389520,
+            "timestamp": "2025-11-02T08:16:08Z",
+            "version": 13,
+            "changeset": 174091059,
+            "user": "CAFEYUTTE",
+            "uid": 8768240,
             "tags": {
                 "addr:city": "大阪市",
                 "addr:neighbourhood": "2-24-18",
@@ -59,7 +80,7 @@
                 "addr:quarter": "木川西",
                 "addr:suburb": "淀川区",
                 "amenity": "cafe",
-                "check_date": "2024-11-23",
+                "check_date": "2025-11-02",
                 "contact:instagram": "cafe_yutte",
                 "email": "cafeyutte3@gmail.com",
                 "facebook": "https://m.facebook.com/cafeyutte",
@@ -72,8 +93,26 @@
                 "payment:credit_cards": "no",
                 "payment:debit_cards": "no",
                 "takeaway": "yes",
-                "website": "https://peraichi.com/landing_pages/view/cafeyutte/",
+                "website": "https://www.instagram.com/cafe_yutte",
                 "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 7486649405,
+            "lat": 34.7541802,
+            "lon": 135.5492628,
+            "timestamp": "2024-11-01T11:39:45Z",
+            "version": 2,
+            "changeset": 158614988,
+            "user": "K_Sakanoshita",
+            "uid": 389520,
+            "tags": {
+                "amenity": "cafe",
+                "contact:instagram": "coffeebeanswork",
+                "name": "COFFEE BEANS WORK",
+                "opening_hours": "10:00-19:00",
+                "takeaway": "yes"
             }
         },
         {
@@ -94,6 +133,57 @@
                 "leisure": "dance",
                 "level": "1",
                 "name": "ミュージックハウスDJ"
+            }
+        },
+        {
+            "type": "node",
+            "id": 10948459890,
+            "lat": 34.7413533,
+            "lon": 135.5201904,
+            "timestamp": "2025-10-18T13:40:21Z",
+            "version": 5,
+            "changeset": 173450980,
+            "user": "miho312m",
+            "uid": 20063583,
+            "tags": {
+                "check_date": "2025-10-18",
+                "contact:instagram": "https://www.instagram.com/zubutei",
+                "name": "長持文庫　旧ずぶ邸",
+                "shop": "gift"
+            }
+        },
+        {
+            "type": "node",
+            "id": 11765930909,
+            "lat": 34.7587505,
+            "lon": 135.5504212,
+            "timestamp": "2024-03-27T10:53:07Z",
+            "version": 1,
+            "changeset": 149218865,
+            "user": "K_Sakanoshita",
+            "uid": 389520,
+            "tags": {
+                "amenity": "cafe",
+                "contact:instagram": "coffee_halo",
+                "name": "コーヒーハロ",
+                "name:en": "coffee halo",
+                "outdoor_seating": "no"
+            }
+        },
+        {
+            "type": "node",
+            "id": 11766059482,
+            "lat": 34.7608525,
+            "lon": 135.5477849,
+            "timestamp": "2024-03-27T12:19:44Z",
+            "version": 1,
+            "changeset": 149222615,
+            "user": "ガンバロール",
+            "uid": 21213409,
+            "tags": {
+                "amenity": "social_facility",
+                "check_date": "2024-03-27",
+                "name": "井高野よってっ亭"
             }
         },
         {
@@ -166,6 +256,104 @@
                 "name:en": "Atelier M",
                 "website": "https://www.mao-matsuda.com/"
             }
+        },
+        {
+            "type": "node",
+            "id": 13269517109,
+            "lat": 34.7509528,
+            "lon": 135.5309245,
+            "timestamp": "2025-11-07T22:56:36Z",
+            "version": 2,
+            "changeset": 174354874,
+            "user": "K_Sakanoshita",
+            "uid": 389520,
+            "tags": {
+                "addr:door": "203",
+                "check_date": "2025-10-30",
+                "contact:instagram": "https://www.instagram.com/tette_kamishinjo",
+                "name": "地域ふれあいサロンtette",
+                "shop": "beauty"
+            }
+        },
+        {
+            "type": "way",
+            "id": 717046718,
+            "timestamp": "2024-11-01T11:14:46Z",
+            "version": 5,
+            "changeset": 158614136,
+            "user": "K_Sakanoshita",
+            "uid": 389520,
+            "nodes": [
+                6734556157,
+                6734556158,
+                6734556159,
+                7487254931,
+                7487254932,
+                6734556160,
+                7487254929,
+                7487254930,
+                6734556157
+            ],
+            "tags": {
+                "amenity": "public_bath",
+                "bath:open_air": "yes",
+                "bath:type": "onsen",
+                "building": "yes",
+                "check_date": "2024-06-06",
+                "fee": "yes",
+                "layer": "1",
+                "name": "天然温泉 満月",
+                "opening_hours": "10:00-03:00",
+                "website": "http://www.onsen-mangetsu.jp/"
+            }
+        },
+        {
+            "type": "node",
+            "id": 6734556157,
+            "lat": 34.7514867,
+            "lon": 135.5334792
+        },
+        {
+            "type": "node",
+            "id": 6734556158,
+            "lat": 34.7517804,
+            "lon": 135.5334975
+        },
+        {
+            "type": "node",
+            "id": 6734556159,
+            "lat": 34.7517846,
+            "lon": 135.5333965
+        },
+        {
+            "type": "node",
+            "id": 6734556160,
+            "lat": 34.7515480,
+            "lon": 135.5333366
+        },
+        {
+            "type": "node",
+            "id": 7487254929,
+            "lat": 34.7515461,
+            "lon": 135.5333817
+        },
+        {
+            "type": "node",
+            "id": 7487254930,
+            "lat": 34.7514909,
+            "lon": 135.5333783
+        },
+        {
+            "type": "node",
+            "id": 7487254931,
+            "lat": 34.7517297,
+            "lon": 135.5333931
+        },
+        {
+            "type": "node",
+            "id": 7487254932,
+            "lat": 34.7517316,
+            "lon": 135.5333480
         }
     ]
 }
