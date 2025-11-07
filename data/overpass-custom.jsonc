@@ -1,6 +1,6 @@
 {
     "osm": {
-        "HigayodoStreetMap2025": {
+        "HigayodoStreetMap": {
             "overpass": [
                 "nwr[\"amenity\"]",
                 "nwr[\"shop\"]",
