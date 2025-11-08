@@ -8,20 +8,18 @@
                 "nwr[\"tourism\"]",
                 "nwr[\"office\"]",
                 "node[\"railway\"=\"station\"]",
-                "nwr[\"leisure\"]"
+                "nwr[\"leisure\"]",
+                "nwr[\"place\"]"
             ],
             "tags": [
                 "shop",
-                "amenity!=parking",
-                "amenity!=vending_machine",
-                "amenity!=parking_entrance",
-                "amenity!=bench",
                 "craft",
                 "office",
                 "amenity",
                 "tourism",
                 "railway",
-                "leisure"
+                "leisure",
+                "place"
             ],
             "expression": {
                 "poiView": true, // true時はアイコン表示

@@ -7,30 +7,39 @@
                     "hidden": true
                 },
                 {
-                    "id": "category",
-                    "name": "Category"
+                    "id": "actid",
+                    "hidden": true
                 },
                 {
                     "id": "title",
-                    "name": "title"
+                    "name": "title",
+                    "width": "60%"
                 },
                 {
                     "id": "eventdate",
                     "name": "datetime",
                     "hidden": true
+                },
+                {
+                    "id": "category",
+                    "name": "Category",
+                    "width": "40%",
+                    "hidden": true
                 }
             ],
             "poiFields": [
                 "id",
-                "category",
-                "#category",
-                "eventdate"
-            ],
-            "actFields": [
                 "id",
-                "category",
+                "#category",
+                "eventdate",
+                "category"
+            ],
+            "actFields": [ //#付きはOSMタグ、ただし#categoryのみ内部判定結果
+                "id", // 最初の列はid固定(#idにするとOSMのPoiでユニークになりActが欠落する)
+                "#id",
                 "title",
-                "eventdate"
+                "eventdate",
+                "category"
             ]
         }
     }
